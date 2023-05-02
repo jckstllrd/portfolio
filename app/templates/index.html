@@ -3,43 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/Users/jackstallard/Documents/Projects/Portfolio/app/static/style.css') }}">
   </head>
   <body>
     <header>
-      <h1>Your Name</h1>
-      <h2>Web Developer</h2>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>Jack Stallard</h1>
+      <h2>Full-Stack Developer</h2>
     </header>
-    
-    <section>
-      <h2>About Me</h2>
-      <p>Write a brief introduction about yourself here.</p>
-    </section>
 
-    <section>
-      <h2>Projects</h2>
-      <!-- Add your project details here -->
-    </section>
+    <!-- Add your sections here -->
 
-    <section>
-      <h2>Skills</h2>
-      <!-- Add your skills here -->
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <!-- Add your work experience here -->
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <!-- Add your education details here -->
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <!-- Add your contact information here -->
-    </section>
-    
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
   </body>
 </html>
